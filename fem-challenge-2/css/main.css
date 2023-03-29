@@ -1,0 +1,114 @@
+:root {
+  /* PRIMARY */
+  --lightRed: hsl(0, 100%, 67%);
+  --orangeyYellow: hsl(39, 100%, 56%);
+  --greenTeal: hsl(166, 100%, 37%);
+  --cobaltBlue: hsl(234, 85%, 45%);
+
+  /* GRADIENTS */
+  --violetBlueCircle: hsla(256, 72%, 46%, 1);
+  --persianBlueCircle: hsla(241, 72%, 46%, 0);
+
+  /* NEUTRAL */
+  --white: hsl(0, 0%, 100%);
+  --paleBlue: hsl(221, 100%, 96%);
+  --lightLavender: hsl(241, 100%, 89%);
+  --darkGrayBlue: hsl(224, 30%, 27%);
+}
+
+.body {
+  background-color: var(--mainBackgroundColor);
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.qr-card {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 0;
+  border-radius: 25px;
+  padding: 15px;
+  background-color: var(--cardBackGColor);
+  max-width: 315px;
+}
+@media screen and (min-width: 1440px) {
+  .qr-card {
+    /* max-width: 410px; */
+  }
+}
+
+.qr-card__img-div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 285px;
+  border: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--cardBackGColor);
+}
+@media (min-width: 1440px) {
+  .qr-card__img-div {
+    /* max-width: 380px; */
+  }
+}
+
+.qr-card__img {
+  max-width: 285px;
+  max-height: 285px;
+}
+
+@media (min-width: 1440px) {
+  .qr-card__img {
+    /* min-width: 380px; */
+    /* min-height: 380px; */
+  }
+}
+
+.qr-card__description-div {
+  padding: 15px;
+}
+@media (min-width: 1440px) {
+  .qr-card__description-div {
+    /* padding: 20px; */
+  }
+}
+
+.qr-card__header {
+  font-weight: 700;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.35;
+  color: var(--firstFontColor);
+}
+@media (min-width: 1440px) {
+  .qr-card__header {
+    /* font-size: 30px; */
+  }
+}
+
+.qr-card__paragraph {
+  font-weight: 400;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+  color: var(--secondFontColor);
+}
+
+@media (min-width: 1440px) {
+  .qr-card__paragraph {
+    /* font-size: 21px; */
+    /* margin-bottom: 20px; */
+  }
+}
