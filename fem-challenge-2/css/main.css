@@ -162,6 +162,25 @@
   }
 }
 
+.summary-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2px */
+  padding: 0;
+  margin: 0;
+}
+
+.summary-list-p {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
 .qr-card__img {
   max-width: 285px;
   max-height: 285px;
