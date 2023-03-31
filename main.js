@@ -1,10 +1,3 @@
-// const iconsDOM = document.querySelector('icon');
-// const memoryIconDOM = document.querySelector('img#memory-icon');
-// const verbalIconDOM = document.querySelector('img#verbal-icon');
-// const visualIconDOM = document.querySelector('img#visual-icon');
-
-// reactionIconDOM.setAttribute('src', 'data[0].');
-
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
